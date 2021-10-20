@@ -1,8 +1,9 @@
 {
-  "name": "@paperfeed/eslint-config",
+  "name": "@aldertv/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint Config",
   "main": "index.js",
+  "repository": "https://github.com/Paperfeed/eslint-config",
   "peerDependencies": {
     "eslint": ">= 7.8.0",
     "typescript": ">= 4.0.0"
