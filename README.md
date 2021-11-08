@@ -1,10 +1,9 @@
 A common eslint config with no hassle
 
-The default config `@aldertv` (located in index.js) is finetuned for a Typescript React project and adds a lot of fixable rules. Sorting is automatic and _beautiful_.
+The default config `@paperfeed` (located in index.js) is finetuned for a Typescript React project and adds a lot of fixable rules. Sorting is automatic and _beautiful_.
 
 ### Recommended usage:
-In the project you want to use it in run `npm i -D @rushstack/eslint-patch
-` 
+In the project you want to use it in run `npm i -D @rushstack/eslint-patch` 
 
 and edit your eslint config to contain the following:
 

@@ -1,5 +1,5 @@
 {
-  "name": "@aldertv/eslint-config",
+  "name": "@paperfeed/eslint-config",
   "version": "1.0.0",
   "description": "Shared ESLint Config",
   "main": "index.js",
