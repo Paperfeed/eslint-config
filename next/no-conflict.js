@@ -8,13 +8,10 @@ module.exports = {
     'sort-keys-fix',
     'typescript-sort-keys',
     'sort-destructure-keys',
-    '@next/next',
   ],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
-    'plugin:@next/next/core-web-vitals',
-    'next',
     'prettier',
   ],
   settings: {

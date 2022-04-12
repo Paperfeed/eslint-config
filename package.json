@@ -1,6 +1,6 @@
 {
   "name": "@paperfeed/eslint-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Shared ESLint Config",
   "main": "index.js",
   "repository": "https://github.com/Paperfeed/eslint-config",
@@ -13,6 +13,7 @@
     "@rushstack/eslint-patch": "^1.1.2",
     "@typescript-eslint/eslint-plugin": "^5.19.0",
     "@typescript-eslint/parser": "^5.19.0",
+    "eslint-config-next": "^12.1.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
