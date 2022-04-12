@@ -8,14 +8,13 @@ module.exports = {
     'sort-keys-fix',
     'typescript-sort-keys',
     'sort-destructure-keys',
-    'jsx-a11y'
   ],
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:import/typescript',
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
-    'plugin:react-hooks/recommended',
+    'plugin:@next/next/recommended',
     'prettier',
   ],
   settings: {
@@ -71,22 +70,6 @@ module.exports = {
       { caseSensitive: false },
     ],
     '@typescript-eslint/member-ordering': 'warn',
-
-    /**
-     * jsx-a11y Acessibility rules - Recommended rules but warn instead of error
-     */
-    'jsx-a11y/alt-text': [
-      'warn',
-      {
-        elements: ['img'],
-        img: ['Image'],
-      },
-    ],
-    'jsx-a11y/aria-props': 'warn',
-    'jsx-a11y/aria-proptypes': 'warn',
-    'jsx-a11y/aria-unsupported-elements': 'warn',
-    'jsx-a11y/role-has-required-aria-props': 'warn',
-    'jsx-a11y/role-supports-aria-props': 'warn',
 
     /**
      * Misc rules

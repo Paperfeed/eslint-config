@@ -1,3 +1,6 @@
+/* eslint-disable sort-keys-fix/sort-keys-fix */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
 module.exports = {
   plugins: [
     'simple-import-sort',
