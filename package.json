@@ -1,6 +1,6 @@
 {
   "name": "@paperfeed/eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Shared ESLint Config",
   "main": "index.js",
   "repository": "https://github.com/Paperfeed/eslint-config",
