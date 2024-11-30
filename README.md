@@ -1,50 +1,29 @@
-An eslint config with no hassle.
+An opinionated linting configuration.
 
-The default config `@paperfeed` (located in next.js) is fine-tuned for a Typescript React project and adds a lot of fixable rules. Sorting is automatic and _beautiful_.
+By default, it will warn for everything that is not sorted alphabetically.
+Most importantly these are mostly fixable linting rules.
 
-It makes use of `@rushstack/eslint-patch` so you won't have to add any dependencies to your project. Just install eslint with this config, and you're good to go!
+It is *highly* recommended to set up your editor to automatically lint fix on save.
 
-### Recommended usage:
-Just add `@paperfeed` to your extends in your eslint config.
-```
-{
-    extends: ['@paperfeed']
-}
-```
-If you wish to use NextJS you can instead use `@paperfeed/eslint-config/next`
+Computers are good at sorting things, so let them do it. It takes cognitive load off of you.
 
-I also recommend adding prettier `npm install -D prettier` with the following config in your package.json 
-```
-  "prettier": {
-    "trailingComma": "es5",
-    "semi": false,
-    "singleQuote": true
-  }
-```
-and set both to run on save in your IDE.
+## Usage
 
+Simply import the configuration in your `eslint.config.mjs` file:
 
+```javascript
+import paperfeed from '@paperfeed/eslint-config'
 
-# 
-
-_From version 1.0.1 onwards the following is no longer required:_
-
-In the project you want to use it in run `npm i -D @rushstack/eslint-patch` 
-
-and edit your eslint config to contain the following:
-
-```
-// .eslintrc.js:
-require('@rushstack/eslint-patch/modern-module-resolution')
-
-module.exports = {
-  extends: ['@paperfeed'],
-}
+export default [
+    ...paperfeed.configs.base,
+    ...paperfeed.configs.react,
+    ...paperfeed.configs.next
+]
 ```
 
+## Available configurations
 
-## Available Configs
-- `@paperfeed`: Optimized for a React project
-- `@paperfeed/eslint-config/vanilla`: Optimized for a vanilla javascript/node project
-- `@paperfeed/eslint-config/next`: Optimized for a NextJS project (uses core-web-vitals configuration)
-- `@paperfeed/eslint-config/next/no-conflict`: Optimized for a NextJS project where you want to extend 'next/recommended' or 'next/core-web-vitals' manually 
+- `base`: Base configuration for typescript projects.
+This includes the `perfectionist` plugin which sorts most everything, converted to warn instead of error (so it doesn't break your build and you don't get constant red wiggles everywhere).
+- `react`: React configuration.
+- `next`: Next.js configuration.
